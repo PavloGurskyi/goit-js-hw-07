@@ -25,20 +25,16 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+const galleryTemplate = images
+  .map(
+    image => `
+      <li class='gallery-item'>
+       <img src = '${image.url}' alt = '${image.alt}'/>
+      </li>
+      `
+  )
+  .join('');
 
-gallery.style.display = 'flex';
-gallery.style.flexWrap = 'wrap';
-gallery.style.gap = '10px';
-gallery.style.padding = '15px';
-gallery.style.listStyle = 'none';
-
-gallery.insertAdjacentHTML(
-  'beforeend',
-  images
-    .map(
-      ({ url, alt }) =>
-        `<li><img src="${url}" alt="${alt}" style="width: 200px; display: block; border-radius: 8px;"></li>`
-    )
-    .join('')
-);
+document
+  .querySelector('.gallery')
+  .insertAdjacentHTML('afterbegin', galleryTemplate);
