@@ -27,6 +27,7 @@ a {
   display: block;
   color: #2e2f42;
 }
+.change-color,
 .back-btn,
 .log-in-btn {
   text-decoration: none;
@@ -37,6 +38,8 @@ a {
   align-items: center;
   display: inline-flex;
 }
+.change-color:hover,
+.change-color:focus,
 .log-in-btn:hover,
 .log-in-btn:focus,
 .back-btn:hover,
@@ -89,4 +92,13 @@ h2 {
   width: 80px;
   margin-top: 6px;
   justify-content: center;
+}
+.change-color {
+  margin-top: 16px;
+  justify-content: center;
+}
+.widget {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
