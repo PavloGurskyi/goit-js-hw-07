@@ -29,7 +29,7 @@ const gallery = document.querySelector('.gallery');
 
 gallery.style.display = 'flex';
 gallery.style.flexWrap = 'wrap';
-gallery.style.gap = '15px';
+gallery.style.gap = '10px';
 gallery.style.padding = '15px';
 gallery.style.listStyle = 'none';
 
