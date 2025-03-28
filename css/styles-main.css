@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -46,4 +50,5 @@ a {
 }
 .main-title {
   margin-bottom: 12px;
+  padding: 20px 0;
 }
